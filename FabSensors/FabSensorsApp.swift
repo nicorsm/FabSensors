@@ -1,14 +1,14 @@
 //
-//  FabSensors2App.swift
-//  FabSensors2
+//  FabSensorsApp.swift
+//  FabSensors
 //
-//  Created by Nico on 21/12/23.
+//  Created by Nicola Giancecchi on 21/12/23.
 //
 
 import SwiftUI
 
 @main
-struct FabSensors2App: App {
+struct FabSensorsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

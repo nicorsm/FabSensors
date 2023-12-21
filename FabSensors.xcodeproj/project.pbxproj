@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		037A193C2B347BF500E3EF41 /* FabSensors2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A193B2B347BF500E3EF41 /* FabSensors2App.swift */; };
+		037A193C2B347BF500E3EF41 /* FabSensorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A193B2B347BF500E3EF41 /* FabSensorsApp.swift */; };
 		037A193E2B347BF500E3EF41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A193D2B347BF500E3EF41 /* ContentView.swift */; };
 		037A19402B347BF600E3EF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037A193F2B347BF600E3EF41 /* Assets.xcassets */; };
 		037A19432B347BF600E3EF41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037A19422B347BF600E3EF41 /* Preview Assets.xcassets */; };
+		037A194A2B347C8400E3EF41 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A19492B347C8400E3EF41 /* SensorData.swift */; };
+		037A194C2B347F0C00E3EF41 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A194B2B347F0C00E3EF41 /* APIManager.swift */; };
+		037A194E2B3480D600E3EF41 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A194D2B3480D600E3EF41 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		037A19382B347BF500E3EF41 /* FabSensors2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FabSensors2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		037A193B2B347BF500E3EF41 /* FabSensors2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabSensors2App.swift; sourceTree = "<group>"; };
+		037A19382B347BF500E3EF41 /* FabSensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FabSensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		037A193B2B347BF500E3EF41 /* FabSensorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabSensorsApp.swift; sourceTree = "<group>"; };
 		037A193D2B347BF500E3EF41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		037A193F2B347BF600E3EF41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		037A19422B347BF600E3EF41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		037A19492B347C8400E3EF41 /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		037A194B2B347F0C00E3EF41 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		037A194D2B3480D600E3EF41 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +41,7 @@
 		037A192F2B347BF500E3EF41 = {
 			isa = PBXGroup;
 			children = (
-				037A193A2B347BF500E3EF41 /* FabSensors2 */,
+				037A193A2B347BF500E3EF41 /* FabSensors */,
 				037A19392B347BF500E3EF41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +49,23 @@
 		037A19392B347BF500E3EF41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				037A19382B347BF500E3EF41 /* FabSensors2.app */,
+				037A19382B347BF500E3EF41 /* FabSensors.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		037A193A2B347BF500E3EF41 /* FabSensors2 */ = {
+		037A193A2B347BF500E3EF41 /* FabSensors */ = {
 			isa = PBXGroup;
 			children = (
-				037A193B2B347BF500E3EF41 /* FabSensors2App.swift */,
+				037A193B2B347BF500E3EF41 /* FabSensorsApp.swift */,
 				037A193D2B347BF500E3EF41 /* ContentView.swift */,
 				037A193F2B347BF600E3EF41 /* Assets.xcassets */,
 				037A19412B347BF600E3EF41 /* Preview Content */,
+				037A19492B347C8400E3EF41 /* SensorData.swift */,
+				037A194B2B347F0C00E3EF41 /* APIManager.swift */,
+				037A194D2B3480D600E3EF41 /* DataManager.swift */,
 			);
-			path = FabSensors2;
+			path = FabSensors;
 			sourceTree = "<group>";
 		};
 		037A19412B347BF600E3EF41 /* Preview Content */ = {
@@ -70,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		037A19372B347BF500E3EF41 /* FabSensors2 */ = {
+		037A19372B347BF500E3EF41 /* FabSensors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 037A19462B347BF600E3EF41 /* Build configuration list for PBXNativeTarget "FabSensors2" */;
+			buildConfigurationList = 037A19462B347BF600E3EF41 /* Build configuration list for PBXNativeTarget "FabSensors" */;
 			buildPhases = (
 				037A19342B347BF500E3EF41 /* Sources */,
 				037A19352B347BF500E3EF41 /* Frameworks */,
@@ -82,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = FabSensors2;
-			productName = FabSensors2;
-			productReference = 037A19382B347BF500E3EF41 /* FabSensors2.app */;
+			name = FabSensors;
+			productName = FabSensors;
+			productReference = 037A19382B347BF500E3EF41 /* FabSensors.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 037A19332B347BF500E3EF41 /* Build configuration list for PBXProject "FabSensors2" */;
+			buildConfigurationList = 037A19332B347BF500E3EF41 /* Build configuration list for PBXProject "FabSensors" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				037A19372B347BF500E3EF41 /* FabSensors2 */,
+				037A19372B347BF500E3EF41 /* FabSensors */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037A194C2B347F0C00E3EF41 /* APIManager.swift in Sources */,
+				037A194E2B3480D600E3EF41 /* DataManager.swift in Sources */,
 				037A193E2B347BF500E3EF41 /* ContentView.swift in Sources */,
-				037A193C2B347BF500E3EF41 /* FabSensors2App.swift in Sources */,
+				037A193C2B347BF500E3EF41 /* FabSensorsApp.swift in Sources */,
+				037A194A2B347C8400E3EF41 /* SensorData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +283,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FabSensors2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FabSensors/Preview Content\"";
 				DEVELOPMENT_TEAM = C8D6ZTZR83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -285,11 +297,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nicorsm.FabSensors2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicorsm.FabSensors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
@@ -300,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FabSensors2/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FabSensors/Preview Content\"";
 				DEVELOPMENT_TEAM = C8D6ZTZR83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,18 +329,21 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nicorsm.FabSensors2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicorsm.FabSensors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		037A19332B347BF500E3EF41 /* Build configuration list for PBXProject "FabSensors2" */ = {
+		037A19332B347BF500E3EF41 /* Build configuration list for PBXProject "FabSensors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				037A19442B347BF600E3EF41 /* Debug */,
@@ -334,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		037A19462B347BF600E3EF41 /* Build configuration list for PBXNativeTarget "FabSensors2" */ = {
+		037A19462B347BF600E3EF41 /* Build configuration list for PBXNativeTarget "FabSensors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				037A19472B347BF600E3EF41 /* Debug */,
